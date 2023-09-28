@@ -1,0 +1,11 @@
+  applications:
+  - name: cardealers210922
+    routes:
+      - route: cardealers210922.eu-gb.mybluemix.net
+    memory: 128M
+    buildpack: python_buildpack
+  - name: cardealers210922-nginx
+    routes:
+      - route: cardealers210922.eu-gb.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
